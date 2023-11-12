@@ -18,6 +18,16 @@ repositories {
     mavenCentral()
 }
 
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.22")
+    }
+}
+
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.8.22")
     implementation("org.apache.commons:commons-lang3:3.12.0")
