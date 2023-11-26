@@ -48,6 +48,8 @@ class SongServiceApiImpl : SongServiceApi {
         val item = DataConverter.songFromDTO(element)
         val song = item.id?.let { songRepository.findById(it).get() }
         song?.name = item.name
+        song?.author = item.author
+        song?.file = item.file
         songRepository.save(song!!)
         return 1
     }
