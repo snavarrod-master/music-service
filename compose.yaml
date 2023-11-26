@@ -4,5 +4,5 @@ services:
     ports:
       - "443:8443"
     volumes:
-      - /keystore:/etc/letsencrypt/live/music.diezproyectos.com
-      - /data:/home/ubuntu/apiData
+      - /etc/letsencrypt/live/music.diezproyectos.com:/keystore
+      - /home/ubuntu/apiData:/data
