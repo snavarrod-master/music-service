@@ -2,7 +2,7 @@ services:
   api:
     image: samuelnavd/music-service
     ports:
-      - "443:8080"
+      - "443:8443"
     volumes:
-      - /keystore/keystore.p12:/etc/letsencrypt/live/music.diezproyectos.com/keystore.p12
+      - /keystore:/etc/letsencrypt/live/music.diezproyectos.com
       - /data:/home/ubuntu/apiData
