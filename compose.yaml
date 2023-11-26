@@ -5,4 +5,4 @@ services:
       - "443:8080"
     volumes:
       - /keystore/keystore.p12:/etc/letsencrypt/live/music.diezproyectos.com/keystore.p12
-      - /data:~/apiData
+      - /data:/home/ubuntu/apiData
